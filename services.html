@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Služby - MUDr. Réka Popelová</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="fix.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="prices.js"></script>
+    <script defer src="main.js"></script>
+    <script defer src="mobile.js"></script>
+</head>
+<body>
+    <!-- Desktop Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>MUDr. Réka Popelová</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Domů</a></li>
+                <li><a href="about.html" class="nav-link">O mně</a></li>
+                <li><a href="kvalifikace.html" class="nav-link">Kvalifikace</a></li>
+                <li><a href="services.html" class="nav-link active">Služby</a></li>
+                <li><a href="clinics.html" class="nav-link">Ordinace</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <header class="mobile-header">
+        <h2 class="mobile-logo">MUDr. Réka Popelová</h2>
+        <button class="mobile-hamburger" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="mobile-menu">
+            <ul class="mobile-nav-list">
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="about.html">O mně</a></li>
+                <li><a href="kvalifikace.html">Kvalifikace</a></li>
+                <li><a href="services.html" class="active">Služby</a></li>
+                <li><a href="clinics.html">Ordinace</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="services-hero">
+        <div class="container">
+            <h1>Rehabilitační a akupunkturní péče</h1>
+        </div>
+    </section>
+
+    <section class="warning-banner">
+        <div class="container">
+            <div class="warning-content">
+                <div class="warning-text">
+                    <p><strong>Akupunktura není hrazena pojišťovnou</strong>, je poskytována za přímou úhradu.</p>
+                    <p>Platba dle domluvy převodem na účet nebo hotově.</p>
+                    <p>Rehabilitační vyšetření v jednotlivých ambulancích je hrazeno pojišťovnou.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-detail">
+        <div class="container">
+            <div class="service-detailed">
+                <h2>Vyšetření rehabilitačním lékařem</h2>
+                <p>Anamnéza, funkční vyšetření, interpretace výsledků, diagnóza, plán terapie a průběžné hodnocení efektu.</p>
+            </div>
+
+            <div class="service-detailed">
+                <h2>Manuální a myoskeletální medicína</h2>
+                <p>Funkční diagnostika svalů a kloubů, jemné mobilizace, PIR techniky a práce s fasciemi pro obnovení pohybu.</p>
+            </div>
+
+            <div class="service-detailed">
+                <h2>Kineziotejping</h2>
+                <p>Elastická páska pro podporu svalů, úlevu od bolesti, redukci otoku a lehkou korekci funkce.</p>
+                
+                <p>Cena za tejping: 150 Kč + 1 Kč/cm pásky</p>
+            </div>
+
+            <div class="service-detailed highlight">
+                <h2>Akupunktura</h2>
+                <p>Stimulace akupunkturních bodů tenkými sterilními jehlami k aktivaci autoregulačních mechanizmů a zmírnění bolesti.</p>
+                
+                <div class="treatment-details">
+                    <h3>Průběh léčby:</h3>
+                    <ul>
+                        <li>Minimální diskomfort</li>
+                        <li>Délka 15–30 min</li>
+                        <li>Akutně: několik sezení (i denně)</li>
+                        <li>Chronicky: 1× týdně, 5–10 sezení</li>
+                        <li>Nutné vstupní vyšetření lékařem</li>
+                    </ul>
+                </div>
+
+                <div class="indications">
+                    <h3>Nejčastější indikace akupunktury:</h3>
+                    <div class="indications-grid">
+                        <div class="indication-group">
+                            <h4>Pohybový aparát</h4>
+                            <ul>
+                                <li>Bolesti funkčního původu</li>
+                                <li>Stavy po operacích / úrazech</li>
+                                <li>Regenerace po zátěži</li>
+                                <li>Vybraná revmatická onemocnění</li>
+                            </ul>
+                        </div>
+                        <div class="indication-group">
+                            <h4>Neurologické potíže</h4>
+                            <ul>
+                                <li>Migrény, tenzní cefalea</li>
+                                <li>Stavy po CMP</li>
+                                <li>Faciální paréza</li>
+                                <li>Podpora u RS</li>
+                            </ul>
+                        </div>
+                        <div class="indication-group">
+                            <h4>Ostatní indikace</h4>
+                            <ul>
+                                <li>Alergie a kožní projevy</li>
+                                <li>Psoriáza</li>
+                                <li>Poruchy spánku, stres</li>
+                                <li>Funkční gynekologické obtíže</li>
+                                <li>Funkční dyspeptické potíže</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="additional-techniques">
+                    <h3>Přidružené techniky akupunktury:</h3>
+                    <ul>
+                        <li><strong>Moxa:</strong> Tepelná stimulace bodu</li>
+                        <li><strong>Akupresura:</strong> Tlaková stimulace</li>
+                        <li><strong>Magnetoterapie:</strong> Magnetická stimulace</li>
+                    </ul>
+                </div>
+
+                <p>Cena za sezení: 500 Kč</p>
+            </div>
+
+            <div class="service-detailed">
+                <h2>Aurikuloterapie</h2>
+                <p>Reflexní stimulace bodů na boltci. Intradermální jehly ponechány až 14 dní (nutno bez náušnic).</p>
+                
+                <p>Cena za sezení: 500 Kč</p>
+            </div>
+
+            <div class="service-detailed">
+                <h2>Baňkování</h2>
+                <p>Podtlaková stimulace pro prokrvení, uvolnění svalů a podporu regenerace.</p>
+                
+                <p>Cena za sezení: 400 Kč</p>
+            </div>
+
+            <div class="service-detailed highlight">
+                <h2>Terapie metodou Ludmily Mojžíšové</h2>
+                <p>Specializovaná rehabilitační metoda zaměřená na léčbu funkční ženské sterility prostřednictvím specifických technik a postupů.</p>
+                
+                <p>Cena za sezení: 500 Kč</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MUDr. Réka Popelová</h3>
+                    <p>Rehabilitace • Akupunktura • TCM</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

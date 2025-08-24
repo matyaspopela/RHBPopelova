@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUDr. Réka Popelová - Rehabilitace a Akupunktura</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="fix.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <script defer src="main.js"></script>
+    <script defer src="mobile.js"></script>
+    <!-- Special fix for mobile menu in Chrome DevTools -->
+    <style>
+        @media screen and (max-width: 768px) {
+            .mobile-header { display: flex !important; }
+            .navbar { display: none !important; }
+            .mobile-hamburger { display: block !important; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Desktop Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>MUDr. Réka Popelová</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Domů</a></li>
+                <li><a href="about.html" class="nav-link">O mně</a></li>
+                <li><a href="kvalifikace.html" class="nav-link">Kvalifikace</a></li>
+                <li><a href="services.html" class="nav-link">Služby</a></li>
+                <li><a href="clinics.html" class="nav-link">Ordinace</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <header class="mobile-header">
+        <h2 class="mobile-logo">MUDr. Réka Popelová</h2>
+        <button class="mobile-hamburger" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="mobile-menu">
+            <ul class="mobile-nav-list">
+                <li><a href="index.html" class="active">Domů</a></li>
+                <li><a href="about.html">O mně</a></li>
+                <li><a href="kvalifikace.html">Kvalifikace</a></li>
+                <li><a href="services.html">Služby</a></li>
+                <li><a href="clinics.html">Ordinace</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <header class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Rehabilitace & Akupunktura</h1>
+                    <p>Moderní medicína propojená s principy TCM pro účinnou funkční léčbu.</p>
+                    <a href="clinics.html" class="cta-button">Objednat se</a>
+                </div>
+                <div class="hero-image">
+                    <img src="yinyang.png" alt="Symbol rovnováhy" class="hero-symbol">
+                </div>
+            </div>
+        </div>
+        <!-- Hero bottom acupuncture image -->
+        <div class="hero-bottom-image">
+            <img src="Acupressure.jpg" alt="Akupunktura - terapeutické jehlování">
+        </div>
+    </header>
+
+    <section class="services home-services">
+        <div class="container">
+            <h2>Služby</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Rehabilitační medicína</h3>
+                    <p>Diagnostika a léčba funkčních poruch pohybového aparátu.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Akupunktura</h3>
+                    <p>Tradiční a elektroakupunktura pro bolest a neurofunkční potíže.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Tradiční čínská medicína</h3>
+                    <p>Komplementární podpora léčby dle principů TCM.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Specializované terapie</h3>
+                    <p>Funkční sterilita, spastická paréza, TMJ dysfunkce.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="conditions">
+        <div class="container">
+            <h2>Stavy které léčím</h2>
+            <div class="conditions-grid">
+                <div class="condition">Bolesti zad a kloubů</div>
+                <div class="condition">Spastická paréza</div>
+                <div class="condition">Poruchy dýchání</div>
+                <div class="condition">Funkční ženská sterilita</div>
+                <div class="condition">Neurologické obtíže</div>
+                <div class="condition">TMJ dysfunkce</div>
+            </div>
+            <a href="clinics.html" class="cta-button">Objednat se</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MUDr. Réka Popelová</h3>
+                    <p>Rehabilitace • Akupunktura • TCM</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

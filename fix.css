@@ -1,0 +1,37 @@
+/* Fix for bullet points showing in mobile view */
+@media screen and (max-width: 768px) {
+    /* Hide any unexpected lists */
+    body > ul, 
+    body > li,
+    header + ul,
+    .navbar + ul,
+    .mobile-header + ul {
+        display: none !important;
+    }
+    
+    /* Fix for navigation positioning */
+    .mobile-header {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+    }
+    
+    /* Position hamburger button better */
+    .mobile-hamburger {
+        margin-right: 20px !important;
+        background-color: rgba(255, 255, 255, 0.95) !important;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    
+    /* Fix for any potential body content issues */
+    body {
+        padding-top: 60px;
+    }
+    
+    /* Hide any desktop elements that might conflict */
+    .navbar, .nav-toggle, .nav-menu {
+        display: none !important;
+    }
+}
