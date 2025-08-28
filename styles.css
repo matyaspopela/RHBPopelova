@@ -842,6 +842,8 @@ body {
     align-items: center;
     max-width: 1400px;
     margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .about-image {
@@ -1725,11 +1727,15 @@ body {
         grid-template-columns: 1fr;
         text-align: center;
         gap: 3rem;
+        padding: 0 20px;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
     .about-hero {
         min-height: auto;
         padding: 100px 0 60px;
+        overflow-x: hidden;
     }
 
     .about-text h1 {
@@ -1742,7 +1748,11 @@ body {
     }
 
     .about-image::after { display: none; }
-    .about-panel { margin: 0 auto; }
+    .about-panel { 
+        margin: 0 auto; 
+        max-width: calc(100vw - 40px);
+        box-sizing: border-box;
+    }
     
     .hero-text h1,
     .about-text h1,

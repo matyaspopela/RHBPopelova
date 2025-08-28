@@ -12,12 +12,6 @@ document.addEventListener('DOMContentLoaded', function() {
         // Log screen width for debugging
         console.log('Window width:', window.innerWidth);
         
-        // Force visibility in mobile view
-        if (window.innerWidth <= 768) {
-            console.log('Mobile view detected - forcing header visibility');
-            document.querySelector('.mobile-header').style.display = 'flex';
-        }
-        
         // Toggle menu on click
         hamburger.addEventListener('click', function(e) {
             e.preventDefault();
@@ -43,19 +37,4 @@ document.addEventListener('DOMContentLoaded', function() {
             document.body.classList.remove('no-scroll');
         });
     });
-    
-    // Force mobile view if in DevTools
-    function forceShowMobileHeader() {
-        if (window.innerWidth <= 800) {
-            const mobileHeader = document.querySelector('.mobile-header');
-            if (mobileHeader) {
-                mobileHeader.style.display = 'flex';
-                console.log('Forced mobile header display');
-            }
-        }
-    }
-    
-    // Run immediately and also after a delay
-    forceShowMobileHeader();
-    setTimeout(forceShowMobileHeader, 500);
 });

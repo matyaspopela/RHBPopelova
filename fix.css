@@ -1,5 +1,11 @@
 /* Fix for bullet points showing in mobile view */
 @media screen and (max-width: 768px) {
+    /* Prevent horizontal overflow */
+    html, body {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+    
     /* Hide any unexpected lists */
     body > ul, 
     body > li,
@@ -15,7 +21,13 @@
         top: 0;
         left: 0;
         width: 100%;
-        z-index: 9999;
+        z-index: 99999 !important;
+        background-color: white !important;
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px !important;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
     
     /* Position hamburger button better */
@@ -23,6 +35,9 @@
         margin-right: 20px !important;
         background-color: rgba(255, 255, 255, 0.95) !important;
         box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        display: block !important;
+        z-index: 100000 !important;
+        position: relative !important;
     }
     
     /* Fix for any potential body content issues */
