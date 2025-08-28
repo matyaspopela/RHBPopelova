@@ -319,6 +319,56 @@ body {
     }
 }
 
+/* Hero Buttons Layout */
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.nav-button {
+    background: linear-gradient(135deg, #d4c4a8, #c4b49c);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(196,180,156,0.3);
+}
+
+.nav-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.nav-button:hover::before {
+    left: 100%;
+}
+
+.nav-button:hover {
+    background: linear-gradient(135deg, #c4b49c, #b8a690);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(196,180,156,0.4);
+}
+
+.nav-button:active {
+    transform: translateY(0);
+}
+
 /* Mission Section */
 .mission {
     background: #e6d7c3;
@@ -1763,6 +1813,21 @@ body {
     
     .mission-text h2 {
         font-size: 2rem;
+    }
+    
+    /* Hero Buttons Mobile Styles */
+    .hero-buttons {
+        flex-direction: column;
+        gap: 0.8rem;
+        align-items: stretch;
+    }
+    
+    .cta-button,
+    .nav-button {
+        text-align: center;
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 0.8rem 1rem;
     }
     
     .timeline-item {
